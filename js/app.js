@@ -5,6 +5,11 @@
 * progress 		(num) 	- значение прогресса. По умолчанию: 0
 * autoRender 	(bool) 	- рендеринг прогресс-бара. По умолчанию: true
 * addCss 		(bool) 	- рендеринг стилей для прогресс-бара. По умолчанию: false
+* Methods:
+* addProgressBarr (blInput*) - добавить в выбранный элемент прогресс-бар
+* changeProgress (progress*, blInput) - изменить значение прогресса
+* Construct: 
+* e = new ProgressBarr (blInput*, progress, autoRender, addCss)
 * ===============================================================================
 * EN
 * ProgressBarr - create a progress bar in a given element
@@ -13,6 +18,11 @@
 * progress 		(num) 	- the value of progress. Default: 0
 * autoRender 	(bool) 	- rendering progress bar. Default: true
 * addCss 		(bool) 	- rendering styles for the progress bar. Default: false
+* Methods:
+* addProgressBarr (blInput*) - add progress bar in selected item 
+* changeProgress (progress*, blInput) -change the value of progress
+* Construct: 
+* e = new ProgressBarr (blInput*, progress, autoRender, addCss)
 */
 window.ProgressBarr = function(blInput, progress, autoRender, addCss) {
 		if(blInput === undefined) throw new Error('Sorry. Missing required argument: class or id');
