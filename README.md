@@ -2,6 +2,7 @@ JS_ProgressBarr-
 ================
 
 JS_ProgressBarr 
+
 /* RU
 * ProgressBarr - создаем прогресс бар в заданном элементе
 * Params: 
