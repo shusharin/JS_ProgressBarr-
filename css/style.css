@@ -1,3 +1,133 @@
+/* style for page
+============================== */
+body {
+  height: 100%;
+}
+
+.wrapper {
+  width: 960px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  color: #444444;
+}
+a:hover {
+  color: #919191;
+  text-decoration: none;
+}
+
+.header {
+  height: 50px;
+  clear: both;
+}
+.header .logo {
+  float: left;
+  height: 50px;
+  width: 20%;
+  min-width: 160px;
+}
+.header .logo a {
+  display: block;
+  line-height: 50px;
+  text-align: center;
+}
+
+.menu {
+  width: 45%;
+  min-width: 450px;
+  padding: 10px;
+  float: left;
+}
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu .menu__item {
+  display: inline-block;
+}
+.menu .menu__item a {
+  display: block;
+  padding: 10px 20px;
+  background: #cccccc;
+  text-align: center;
+}
+.menu .menu__item a:hover {
+  color: white;
+  background: #b3b3b3;
+}
+
+.menu-orient-vert {
+  width: inherit;
+  min-width: inherit;
+  padding: 0;
+}
+.menu-orient-vert .menu__item {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.search {
+  width: 25%;
+  min-width: 250px;
+  float: right;
+  padding-top: 20px;
+}
+.search .search__input {
+  float: right;
+  width: 150px;
+  height: 30px;
+  padding: 3px 5px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+.search .search__button {
+  display: block;
+  float: right;
+  line-height: 30px;
+  padding: 0 10px;
+}
+
+.content {
+  clear: both;
+}
+
+.left-column {
+  width: 15%;
+  min-width: 160px;
+  float: left;
+  padding-right: 15px;
+}
+
+.main {
+  width: 75%;
+  min-width: 790px;
+  float: right;
+  padding-left: 15px;
+}
+
+.foot-push {
+  height: 50px;
+  clear: both;
+  display: block;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  margin-top: -40px;
+  border-top: 1px dashed #ccc;
+  text-align: center;
+  padding: 10px;
+}
+
+/* style for progress barr
+============================== */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -16,8 +146,9 @@ div[class$='-barr__cavity'] {
   height: 10px;
   width: 100%;
   margin: 5px;
+  background: #fff;
   border: 1px solid #f7f7f7;
-  border-top: 2px solid #cecece;
+  border-top: 2px solid #c4c4c4;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -33,25 +164,25 @@ div[class$='-barr__progress'] {
   height: 10px;
   width: 0;
   margin: -2px 0 0 -1px;
-  border: 1px solid #9AF351;
-  border-top: 2px solid #9AF351;
-  border-bottom: 1px solid #6cd019;
+  border: 1px solid #9af351;
+  border-top: 2px solid #b6f681;
+  border-bottom: 1px solid #65d00e;
   border-radius: 10px;
   background: #9af351;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #9af351 0%, #66c31f 50%, #9af351 100%);
+  background: -moz-linear-gradient(top, #9af351 0%, #65d00e 50%, #9af351 100%);
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9af351), color-stop(50%, #66c31f), color-stop(100%, #9af351));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9af351), color-stop(50%, #65d00e), color-stop(100%, #9af351));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #9af351 0%, #66c31f 50%, #9af351 100%);
+  background: -webkit-linear-gradient(top, #9af351 0%, #65d00e 50%, #9af351 100%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #9af351 0%, #66c31f 50%, #9af351 100%);
+  background: -o-linear-gradient(top, #9af351 0%, #65d00e 50%, #9af351 100%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #9af351 0%, #66c31f 50%, #9af351 100%);
+  background: -ms-linear-gradient(top, #9af351 0%, #65d00e 50%, #9af351 100%);
   /* IE10+ */
-  background: linear-gradient(to bottom, #9af351 0%, #66c31f 50%, #9af351 100%);
+  background: linear-gradient(to bottom, #9af351 0%, #65d00e 50%, #9af351 100%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9af351', endColorstr='#9af351',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color_progress_border', endColorstr='$color_progress_border',GradientType=0 );
   /* IE6-9 */
 }
 
