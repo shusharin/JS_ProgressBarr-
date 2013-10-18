@@ -111,6 +111,7 @@ window.ProgressBarr = function(blInput, progress, autoRender, addCss) {
 			_setProgress: function(progress, blInput) {
 				if(blInput === undefined) var blInput = _self._bI;
 				if(progress === undefined) throw new Error('Sorry. Missing required argument: progress');
+				if(progress > 100) progress = 100;
 				var tmp = _self._tmpName(blInput); // если ввели несколько классов - склеиваем их
 				var currBarr = _self._findBlockInput(blInput); 
 				currBarr.getElementsByClassName(tmp + '-barr__progress')[0].style.width = progress+'%'; // изменяем размер 
